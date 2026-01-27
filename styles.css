@@ -57,8 +57,10 @@ ul {
     font-weight: 700;
 }
 
-.logo-icon {
-    font-size: 2rem;
+.logo-mascot {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
 .logo-text {
@@ -127,6 +129,19 @@ ul {
 
 .highlight {
     color: var(--accent);
+}
+
+.hero-mascot {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .hero-subtitle {
