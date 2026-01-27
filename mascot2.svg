@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <defs>
+    <!-- Gradient for face -->
+    <radialGradient id="faceGradient2" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#fce4d4"/>
+      <stop offset="100%" style="stop-color:#f5c9ab"/>
+    </radialGradient>
+    <!-- Gradient for hair - more orange -->
+    <linearGradient id="hairGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8732a"/>
+      <stop offset="100%" style="stop-color:#d4581a"/>
+    </linearGradient>
+    <!-- Gradient for beard -->
+    <linearGradient id="beardGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4641e"/>
+      <stop offset="100%" style="stop-color:#b8501a"/>
+    </linearGradient>
+    <!-- Gradient for shirt -->
+    <linearGradient id="shirtGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#c1121f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1d3557"/>
+  <circle cx="100" cy="100" r="88" fill="#f4a261" opacity="0.2"/>
+
+  <!-- Broad shoulders and neck -->
+  <ellipse cx="100" cy="185" rx="30" ry="22" fill="#f5c9ab"/>
+
+  <!-- Shirt/shoulders - much broader like football player -->
+  <path d="M25 220 Q35 180 55 170 Q75 160 100 165 Q125 160 145 170 Q165 180 175 220 Z" fill="url(#shirtGradient2)"/>
+  <!-- Shoulder definition -->
+  <ellipse cx="45" cy="195" rx="25" ry="15" fill="url(#shirtGradient2)"/>
+  <ellipse cx="155" cy="195" rx="25" ry="15" fill="url(#shirtGradient2)"/>
+  <!-- Collar -->
+  <path d="M82 168 L100 185 L118 168" fill="none" stroke="#a11018" stroke-width="3"/>
+
+  <!-- Ears (behind beard) -->
+  <ellipse cx="42" cy="100" rx="10" ry="16" fill="url(#faceGradient2)"/>
+  <ellipse cx="158" cy="100" rx="10" ry="16" fill="url(#faceGradient2)"/>
+
+  <!-- Full beard - covering cheeks and jawline -->
+  <path d="M45 95
+           Q42 110 45 130
+           Q50 155 70 165
+           Q85 172 100 175
+           Q115 172 130 165
+           Q150 155 155 130
+           Q158 110 155 95
+           Q150 105 140 110
+           Q120 118 100 120
+           Q80 118 60 110
+           Q50 105 45 95"
+        fill="url(#beardGradient2)"/>
+
+  <!-- Beard texture lines -->
+  <path d="M55 120 Q60 135 70 150" fill="none" stroke="#c45a18" stroke-width="2" opacity="0.5"/>
+  <path d="M145 120 Q140 135 130 150" fill="none" stroke="#c45a18" stroke-width="2" opacity="0.5"/>
+  <path d="M100 125 Q100 145 100 165" fill="none" stroke="#c45a18" stroke-width="2" opacity="0.5"/>
+  <path d="M75 125 Q78 145 85 160" fill="none" stroke="#c45a18" stroke-width="2" opacity="0.5"/>
+  <path d="M125 125 Q122 145 115 160" fill="none" stroke="#c45a18" stroke-width="2" opacity="0.5"/>
+
+  <!-- Face (upper portion visible above beard) -->
+  <ellipse cx="100" cy="95" rx="55" ry="58" fill="url(#faceGradient2)"/>
+
+  <!-- Beard overlay on lower face -->
+  <path d="M48 100
+           Q45 115 50 130
+           Q55 145 70 155
+           Q85 162 100 165
+           Q115 162 130 155
+           Q145 145 150 130
+           Q155 115 152 100
+           Q145 108 130 115
+           Q115 120 100 122
+           Q85 120 70 115
+           Q55 108 48 100"
+        fill="url(#beardGradient2)"/>
+
+  <!-- Hair - main (more orange) -->
+  <ellipse cx="100" cy="52" rx="54" ry="32" fill="url(#hairGradient2)"/>
+  <!-- Hair - sides -->
+  <path d="M46 52 Q38 70 45 98 Q52 78 54 58 Z" fill="url(#hairGradient2)"/>
+  <path d="M154 52 Q162 70 155 98 Q148 78 146 58 Z" fill="url(#hairGradient2)"/>
+  <!-- Hair - top texture/volume -->
+  <path d="M55 48 Q65 28 82 38 Q95 22 115 35 Q130 25 145 45" fill="none" stroke="#f28a3c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M65 42 Q80 32 95 40 Q110 30 130 42" fill="none" stroke="#ea6f20" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eyebrows (orange tinted) -->
+  <path d="M62 78 Q75 70 90 78" fill="none" stroke="#d4641e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M110 78 Q125 70 138 78" fill="none" stroke="#d4641e" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="76" cy="92" rx="11" ry="9" fill="white"/>
+  <ellipse cx="124" cy="92" rx="11" ry="9" fill="white"/>
+  <!-- Pupils -->
+  <circle cx="78" cy="93" r="5" fill="#1d3557"/>
+  <circle cx="126" cy="93" r="5" fill="#1d3557"/>
+  <!-- Eye highlights -->
+  <circle cx="80" cy="91" r="2" fill="white"/>
+  <circle cx="128" cy="91" r="2" fill="white"/>
+
+  <!-- Nose -->
+  <ellipse cx="100" cy="108" rx="9" ry="7" fill="#eab89a"/>
+
+  <!-- Mustache (fuller, connects to beard) -->
+  <ellipse cx="100" cy="118" rx="22" ry="8" fill="url(#beardGradient2)"/>
+  <path d="M78 118 Q88 112 100 116 Q112 112 122 118" fill="#d4641e"/>
+
+  <!-- Smile (visible through mustache/beard area) -->
+  <path d="M88 128 Q100 138 112 128" fill="none" stroke="#b34040" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Cheeks (rosy, visible above beard line) -->
+  <ellipse cx="55" cy="100" rx="8" ry="5" fill="#f4a261" opacity="0.5"/>
+  <ellipse cx="145" cy="100" rx="8" ry="5" fill="#f4a261" opacity="0.5"/>
+
+  <!-- Chili pepper accessory -->
+  <g transform="translate(155, 40) rotate(30)">
+    <ellipse cx="0" cy="0" rx="9" ry="20" fill="#e63946"/>
+    <ellipse cx="0" cy="-2" rx="7" ry="16" fill="#c1121f"/>
+    <path d="M-3 -20 Q0 -28 5 -22 Q3 -20 0 -20" fill="#2d6a4f"/>
+  </g>
+
+  <!-- Fire/heat lines -->
+  <g opacity="0.8">
+    <path d="M22 55 Q15 42 22 30" fill="none" stroke="#f4a261" stroke-width="3" stroke-linecap="round"/>
+    <path d="M178 55 Q185 42 178 30" fill="none" stroke="#f4a261" stroke-width="3" stroke-linecap="round"/>
+    <path d="M12 70 Q5 57 12 45" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round"/>
+    <path d="M188 70 Q195 57 188 45" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
