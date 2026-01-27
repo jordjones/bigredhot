@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigRedHot - TexMex & Salsa Ratings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">&#127798;</span>
+                <span class="logo-text">BigRedHot</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#submit">Submit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find the <span class="highlight">Hottest Salsa</span> in East Texas</h1>
+                <p class="hero-subtitle">Your guide to the best TexMex restaurants and their salsa ratings in the Mount Pleasant area.</p>
+            </div>
+        </section>
+
+        <section id="restaurants" class="restaurants-section">
+            <div class="table-header">
+                <h2>Restaurant Ratings</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search restaurants...">
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table id="restaurantTable">
+                    <thead>
+                        <tr>
+                            <th data-sort="restaurant">Restaurant <span class="sort-icon">&#8597;</span></th>
+                            <th data-sort="location">Location <span class="sort-icon">&#8597;</span></th>
+                            <th data-sort="salsa">Salsa <span class="sort-icon">&#8597;</span></th>
+                            <th data-sort="rating">Rating <span class="sort-icon">&#8597;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="restaurant-name">Jalapeno Tree</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating hot">Hot</span></td>
+                            <td><span class="stars" data-rating="4.5">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.5</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Restaurante Mexico</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating medium">Medium</span></td>
+                            <td><span class="stars" data-rating="4.7">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.7</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Tierra Y Mar Grill</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating hot">Hot</span></td>
+                            <td><span class="stars" data-rating="4.6">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.6</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Jorge's Mexican Restaurant</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating mild">Mild</span></td>
+                            <td><span class="stars" data-rating="4.3">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.3</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Gabby's Tacos</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating hot">Hot</span></td>
+                            <td><span class="stars" data-rating="4.4">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.4</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Lala's Mexican Food</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating extra-hot">Extra Hot</span></td>
+                            <td><span class="stars" data-rating="4.8">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Pupuseria El Tamarindo</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating medium">Medium</span></td>
+                            <td><span class="stars" data-rating="4.2">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.2</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Pollo Bueno</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating mild">Mild</span></td>
+                            <td><span class="stars" data-rating="4.0">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.0</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Two Senoritas</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating hot">Hot</span></td>
+                            <td><span class="stars" data-rating="4.1">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.1</td>
+                        </tr>
+                        <tr>
+                            <td class="restaurant-name">Taqueria Monterrey</td>
+                            <td>Mount Pleasant, TX</td>
+                            <td><span class="salsa-rating extra-hot">Extra Hot</span></td>
+                            <td><span class="stars" data-rating="4.3">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="legend">
+                <h4>Salsa Heat Level:</h4>
+                <span class="salsa-rating mild">Mild</span>
+                <span class="salsa-rating medium">Medium</span>
+                <span class="salsa-rating hot">Hot</span>
+                <span class="salsa-rating extra-hot">Extra Hot</span>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About BigRedHot</h2>
+                <p>We're on a mission to find and rate the best salsa in East Texas. Our team visits local TexMex and Mexican restaurants to sample their salsa and share our honest ratings with you.</p>
+                <p>All ratings are based on flavor, heat level, freshness, and overall experience. Know a restaurant we should visit? Let us know!</p>
+            </div>
+        </section>
+
+        <section id="submit" class="cta">
+            <h2>Know a Great Spot?</h2>
+            <p>Help us discover more amazing TexMex restaurants in the area.</p>
+            <a href="mailto:submit@bigredhot.com" class="btn btn-primary btn-large">Submit a Restaurant</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">&#127798;</span>
+                <span class="logo-text">BigRedHot</span>
+            </div>
+            <p>Serving up salsa ratings in East Texas</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BigRedHot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
