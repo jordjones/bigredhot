@@ -15,6 +15,7 @@ const FALLBACK_DATA = [
     { restaurant: 'Taqueria Monterrey', location: 'Mount Pleasant, TX', salsa: '', rating: 4.3 },
     { restaurant: 'Don Juan (on the Square)', location: 'Tyler, TX', salsa: '', rating: 5.0, description: 'Best hot sauce in East Texas!' },
     { restaurant: 'Test', location: 'Pittsburg, TX', salsa: '', rating: 2.0 },
+    { restaurant: 'Juan Pablos', location: 'Sulphur Springs, TX', salsa: '', rating: 4.0 },
 ];
 
 const table = document.getElementById('restaurantTable');
