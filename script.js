@@ -1,3 +1,18 @@
+// Generate star display from data-rating attributes
+document.querySelectorAll('.stars').forEach(el => {
+    const rating = parseFloat(el.dataset.rating);
+    const fullStars = Math.floor(rating);
+    const fraction = rating - fullStars;
+    const hasHalf = fraction >= 0.25 && fraction < 0.75;
+    const roundedFull = fraction >= 0.75 ? fullStars + 1 : fullStars;
+    const emptyStars = 5 - roundedFull - (hasHalf ? 1 : 0);
+
+    let html = '\u2605'.repeat(roundedFull);
+    if (hasHalf) html += '<span class="star-half">\u2605</span>';
+    html += '\u2606'.repeat(emptyStars);
+    el.innerHTML = html;
+});
+
 // Search functionality
 const searchInput = document.getElementById('searchInput');
 const table = document.getElementById('restaurantTable');

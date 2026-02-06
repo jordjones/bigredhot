@@ -274,6 +274,12 @@ tbody tr:last-child td {
     letter-spacing: 2px;
 }
 
+.star-half {
+    display: inline-block;
+    overflow: hidden;
+    width: 0.5em;
+}
+
 /* Legend */
 .legend {
     margin-top: 1.5rem;
