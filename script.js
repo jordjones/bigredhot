@@ -146,7 +146,7 @@ function renderTable(data) {
 // Fetch CSV from Google Sheets, fall back to hardcoded data
 async function loadData() {
     try {
-        const resp = await fetch(SHEET_CSV_URL);
+        const resp = await fetch(SHEET_CSV_URL + '&_t=' + Date.now());
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const text = await resp.text();
         const rows = parseCSV(text);
