@@ -15,19 +15,19 @@ const FALLBACK_DATA = [
     { restaurant: 'Taqueria Monterrey', location: 'Mount Pleasant, TX', salsa: 'Extra Hot', rating: 4.3 },
 ];
 
-// Hardcoded coordinates for known restaurants
+// Real coordinates for known restaurants (geocoded from actual addresses)
 const COORDINATES = {
-    'Jalapeno Tree':              [33.1568, -94.9682],
-    'Restaurante Mexico':         [33.1590, -94.9710],
-    'Tierra Y Mar Grill':         [33.1545, -94.9655],
-    "Jorge's Mexican Restaurant": [33.1610, -94.9730],
-    "Gabby's Tacos":              [33.1575, -94.9698],
-    "Lala's Mexican Food":        [33.1558, -94.9668],
-    'Pupuseria El Tamarindo':     [33.1600, -94.9715],
-    'Pollo Bueno':                [33.1540, -94.9640],
-    'Two Senoritas':              [33.1585, -94.9705],
-    'Taqueria Monterrey':         [33.1565, -94.9690],
-    'Don Juan':                   [32.3513, -95.3011],
+    'Jalapeno Tree':              [33.1672, -94.9981],  // 2506 W Ferguson Rd
+    'Restaurante Mexico':         [33.1541, -94.9740],  // 301 W Ferguson Rd
+    'Tierra Y Mar Grill':         [33.1666, -94.9673],  // 305 E 12th St
+    "Jorge's Mexican Restaurant": [33.1694, -94.9702],  // 1406 N Jefferson Ave
+    "Gabby's Tacos":              [33.1600, -94.9684],  // 502 N Jefferson Ave
+    "Lala's Mexican Food":        [33.2188, -94.8430],  // 1649 Farm Road 1001
+    'Pupuseria El Tamarindo':     [33.1498, -94.9685],  // 811 S Jefferson Ave
+    'Pollo Bueno':                [33.1541, -94.9741],  // 315 W Ferguson Rd
+    'Two Senoritas':              [33.1713, -95.0015],  // 2601 W Ferguson Rd
+    'Taqueria Monterrey':         [33.1664, -94.9742],  // 721 W 12th St
+    'Don Juan':                   [32.3511, -95.2850],  // 1313 E Erwin St, Tyler
 };
 
 // Heat level → marker color
