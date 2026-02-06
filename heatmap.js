@@ -3,17 +3,18 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_tew-CY
 
 // Fallback data if CSV fetch fails
 const FALLBACK_DATA = [
-    { restaurant: 'Jalapeno Tree', location: 'Mount Pleasant, TX', salsa: 'Hot', rating: 4.5 },
-    { restaurant: 'Restaurante Mexico', location: 'Mount Pleasant, TX', salsa: 'Medium', rating: 4.7 },
-    { restaurant: 'Tierra Y Mar Grill', location: 'Mount Pleasant, TX', salsa: 'Hot', rating: 4.6 },
-    { restaurant: "Jorge's Mexican Restaurant", location: 'Mount Pleasant, TX', salsa: 'Mild', rating: 4.3 },
-    { restaurant: "Gabby's Tacos", location: 'Mount Pleasant, TX', salsa: 'Hot', rating: 4.4 },
-    { restaurant: "Lala's Mexican Food", location: 'Mount Pleasant, TX', salsa: 'Extra Hot', rating: 4.8 },
-    { restaurant: 'Pupuseria El Tamarindo', location: 'Mount Pleasant, TX', salsa: 'Medium', rating: 4.2 },
-    { restaurant: 'Pollo Bueno', location: 'Mount Pleasant, TX', salsa: 'Mild', rating: 4.0 },
-    { restaurant: 'Two Senoritas', location: 'Mount Pleasant, TX', salsa: 'Hot', rating: 4.1 },
-    { restaurant: 'Taqueria Monterrey', location: 'Mount Pleasant, TX', salsa: 'Extra Hot', rating: 4.3 },
-    { restaurant: 'Don Juan (on the Square)', location: 'Tyler, TX', salsa: 'Hot', rating: 5.0, description: 'Best hot sauce in East Texas!' },
+    { restaurant: 'Jalapeno Tree', location: 'Mount Pleasant, TX', salsa: '', rating: 4.5 },
+    { restaurant: 'Restaurante Mexico', location: 'Mount Pleasant, TX', salsa: '', rating: 4.7 },
+    { restaurant: 'Tierra Y Mar Grill', location: 'Mount Pleasant, TX', salsa: '', rating: 4.6 },
+    { restaurant: "Jorge's Mexican Restaurant", location: 'Mount Pleasant, TX', salsa: '', rating: 4.3 },
+    { restaurant: "Gabby's Tacos", location: 'Mount Pleasant, TX', salsa: '', rating: 4.4 },
+    { restaurant: "Lala's Mexican Food", location: 'Mount Pleasant, TX', salsa: '', rating: 4.8 },
+    { restaurant: 'Pupuseria El Tamarindo', location: 'Mount Pleasant, TX', salsa: '', rating: 4.2 },
+    { restaurant: 'Pollo Bueno', location: 'Mount Pleasant, TX', salsa: '', rating: 4.0 },
+    { restaurant: 'Two Senoritas', location: 'Mount Pleasant, TX', salsa: '', rating: 4.1 },
+    { restaurant: 'Taqueria Monterrey', location: 'Mount Pleasant, TX', salsa: '', rating: 4.3 },
+    { restaurant: 'Don Juan (on the Square)', location: 'Tyler, TX', salsa: '', rating: 5.0, description: 'Best hot sauce in East Texas!' },
+    { restaurant: 'Test', location: 'Pittsburg, TX', salsa: '', rating: 2.0 },
 ];
 
 // Real coordinates for known restaurants (geocoded from actual addresses)
