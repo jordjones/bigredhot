@@ -143,6 +143,11 @@ function renderTable(data) {
     });
 }
 
+// Sort data by rating, highest first
+function sortByRating(data) {
+    return data.slice().sort((a, b) => (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0));
+}
+
 // Fetch CSV from Google Sheets, fall back to hardcoded data
 async function loadData() {
     try {
@@ -151,10 +156,10 @@ async function loadData() {
         const text = await resp.text();
         const rows = parseCSV(text);
         if (rows.length === 0) throw new Error('Empty sheet');
-        renderTable(rows);
+        renderTable(sortByRating(rows));
     } catch (err) {
         console.warn('Failed to load Google Sheet, using fallback data:', err);
-        renderTable(FALLBACK_DATA);
+        renderTable(sortByRating(FALLBACK_DATA));
     }
 }
 
