@@ -13,6 +13,7 @@ const FALLBACK_DATA = [
     { restaurant: 'Pollo Bueno', location: 'Mount Pleasant, TX', salsa: 'Mild', rating: 4.0 },
     { restaurant: 'Two Senoritas', location: 'Mount Pleasant, TX', salsa: 'Hot', rating: 4.1 },
     { restaurant: 'Taqueria Monterrey', location: 'Mount Pleasant, TX', salsa: 'Extra Hot', rating: 4.3 },
+    { restaurant: 'Don Juan (on the Square)', location: 'Tyler, TX', salsa: 'Hot', rating: 5.0, description: 'Best hot sauce in East Texas!' },
 ];
 
 // Real coordinates for known restaurants (geocoded from actual addresses)
@@ -27,7 +28,7 @@ const COORDINATES = {
     'Pollo Bueno':                [33.1541, -94.9741],  // 315 W Ferguson Rd
     'Two Senoritas':              [33.1713, -95.0015],  // 2601 W Ferguson Rd
     'Taqueria Monterrey':         [33.1664, -94.9742],  // 721 W 12th St
-    'Don Juan':                   [32.3511, -95.2850],  // 1313 E Erwin St, Tyler
+    'Don Juan (on the Square)':    [32.3511, -95.2850],  // 113 E Erwin St, Tyler
 };
 
 // Heat level → marker color

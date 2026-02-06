@@ -13,6 +13,7 @@ const FALLBACK_DATA = [
     { restaurant: 'Pollo Bueno', location: 'Mount Pleasant, TX', salsa: 'Mild', rating: 4.0 },
     { restaurant: 'Two Senoritas', location: 'Mount Pleasant, TX', salsa: 'Hot', rating: 4.1 },
     { restaurant: 'Taqueria Monterrey', location: 'Mount Pleasant, TX', salsa: 'Extra Hot', rating: 4.3 },
+    { restaurant: 'Don Juan (on the Square)', location: 'Tyler, TX', salsa: 'Hot', rating: 5.0, description: 'Best hot sauce in East Texas!' },
 ];
 
 const table = document.getElementById('restaurantTable');
