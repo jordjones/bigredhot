@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigRedHot - Heat Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css">
+</head>
+<body class="map-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="mascot.svg" alt="BigRedHot Mascot" class="logo-mascot">
+                    <span class="logo-text">BigRedHot</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#restaurants">Restaurants</a></li>
+                <li><a href="heatmap.html" class="nav-active">Heat Map</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#submit">Submit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="map"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="mascot.svg" alt="BigRedHot Mascot" class="logo-mascot">
+                <span class="logo-text">BigRedHot</span>
+            </div>
+            <p>Serving up salsa ratings in East Texas</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BigRedHot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
+    <script src="heatmap.js"></script>
+</body>
+</html>
